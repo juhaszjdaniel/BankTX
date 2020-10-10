@@ -56,7 +56,7 @@ public class Transaction {
 
     @Override
     public String toString() {
-        return "accountNumber='" + accountNumber + '\'' +
+        return "Transaction: accountNumber='" + accountNumber + '\'' +
                 ", currency='" + currency + '\'' +
                 ", amount=" + amount +
                 ", exchangeRate=" + exchangeRate;

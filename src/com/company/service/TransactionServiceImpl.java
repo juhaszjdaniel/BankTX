@@ -86,10 +86,11 @@ public class TransactionServiceImpl implements TransactionService {
 
     private static void printReport(List<Account> accounts, List<Transaction> transactions) {
         accounts.forEach(account -> {
-            System.out.println(account);
+            System.out.println("Transactions for " + account.getAccountNumber() + " account (balance: " + account.getBalance() + ") :");
             transactions.stream()
                     .filter(transaction1 -> transaction1.getAccountNumber().equalsIgnoreCase(account.getAccountNumber()))
                     .forEach(System.out::println);
+            System.out.println();
         });
     }
 
