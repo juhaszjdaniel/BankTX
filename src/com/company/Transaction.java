@@ -1,9 +1,11 @@
 package com.company;
 
+import java.util.Currency;
+
 public class Transaction {
     private String accountNumber;
 
-    private String currency;
+    private Currency currency;
 
     private double amount;
 
@@ -12,7 +14,7 @@ public class Transaction {
     public Transaction() {
     }
 
-    public Transaction(String accountNumber, String currency, double amount, double exchangeRate) {
+    public Transaction(String accountNumber, Currency currency, double amount, double exchangeRate) {
         this.accountNumber = accountNumber;
         this.currency = currency;
         this.amount = amount;
@@ -27,11 +29,11 @@ public class Transaction {
         this.accountNumber = accountNumber;
     }
 
-    public String getCurrency() {
+    public Currency getCurrency() {
         return currency;
     }
 
-    public void setCurrency(String currency) {
+    public void setCurrency(Currency currency) {
         this.currency = currency;
     }
 
