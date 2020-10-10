@@ -1,5 +1,6 @@
-package com.company;
+package com.company.domain;
 
+import java.math.BigDecimal;
 import java.util.Currency;
 
 public class Transaction {
@@ -7,14 +8,14 @@ public class Transaction {
 
     private Currency currency;
 
-    private double amount;
+    private BigDecimal amount;
 
     private double exchangeRate;
 
     public Transaction() {
     }
 
-    public Transaction(String accountNumber, Currency currency, double amount, double exchangeRate) {
+    public Transaction(String accountNumber, Currency currency, BigDecimal amount, double exchangeRate) {
         this.accountNumber = accountNumber;
         this.currency = currency;
         this.amount = amount;
@@ -37,11 +38,11 @@ public class Transaction {
         this.currency = currency;
     }
 
-    public double getAmount() {
+    public BigDecimal getAmount() {
         return amount;
     }
 
-    public void setAmount(double amount) {
+    public void setAmount(BigDecimal amount) {
         this.amount = amount;
     }
 
@@ -55,11 +56,9 @@ public class Transaction {
 
     @Override
     public String toString() {
-        return "Transaction{" +
-                "accountNumber='" + accountNumber + '\'' +
+        return "accountNumber='" + accountNumber + '\'' +
                 ", currency='" + currency + '\'' +
                 ", amount=" + amount +
-                ", exchangeRate=" + exchangeRate +
-                '}';
+                ", exchangeRate=" + exchangeRate;
     }
 }
