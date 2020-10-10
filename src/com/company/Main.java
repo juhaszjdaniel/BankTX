@@ -14,7 +14,7 @@ public class Main {
 
     public static void main(String[] args) {
         TransactionService transactionService = new TransactionServiceImpl();
-        transactionService.getTransactionsFromInput(accounts);
+        transactionService.goThroughTransactions(accounts);
 
     }
 

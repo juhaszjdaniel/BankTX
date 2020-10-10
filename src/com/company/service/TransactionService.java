@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface TransactionService {
 
-    void getTransactionsFromInput(List<Account> accounts);
+    void goThroughTransactions(List<Account> accounts);
 }

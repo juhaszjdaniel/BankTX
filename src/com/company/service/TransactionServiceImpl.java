@@ -16,7 +16,7 @@ public class TransactionServiceImpl implements TransactionService {
     Scanner input = new Scanner(System.in);
 
     @Override
-    public void getTransactionsFromInput(List<Account> accounts) {
+    public void goThroughTransactions(List<Account> accounts) {
         List<Transaction> transactions = new ArrayList<>();
         int counter = 1;
 
